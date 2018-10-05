@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="assets/mui/css/mui.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<script src="assets/zepto/zepto.min.js"></script>
+	<script src="assets/artTemplate/template-native.js"></script>
+	<script src="assets/mui/js/mui.min.js"></script>
+    <script src="js/public.js"></script>
+    <style>
+         .logo{
+             float: left;
+             width: 40px;
+             height: 40px;
+             margin: 10px;
+         }
+         .logo img{
+             width: 100%;
+         }
+        .mui-bar .search{
+             right: 40px;
+            left: 70px;
+            display: inline-block;
+            overflow: hidden;
+             height: 44px;
+             width: 300px;
+             background-color: #fff;
+         }
+         .nav-links{
+             padding: 10px;
+         }
+         .nav-links a{
+            float: left;
+            width: 20%; 
+         }
+         .nav-links a img{
+            width: 100%;
+           vertical-align: top;
+         }
+.aa{
+overflow: hidden;
+}
+.aa .a1{
+    float: left;
+    width: 179px;
+    height: 315px;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+.aa .a2{
+    float: left;
+    width: 220px;
+}
+.aa .a3{
+    float: left;
+    width: 220px;
+}
+.aa .a1 img{
+    width: 100%;
+    height: 100%;
+}
+.aa .a2 img{
+    width: 100%;
+}
+.aa .a3 img{
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav my-header">
+		<div class="logo"><img src="./images/mi.png" alt=""></div>
+        <h1 class="mui-title search">乐淘云购</h1>
+       
+		<a class="mui-icon mui-icon-search mui-pull-right"></a>
+	</header>
+	<nav class="mui-bar mui-bar-tab my-footer">
+		<a class="mui-tab-item mui-active" href="index.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" href="category.html">
+			<span class="mui-icon mui-icon-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-tab-item" href="cart.html">
+			<span class="mui-icon iconfont icon-daohanggouwuche"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-tab-item" href="user.html">
+			<span class="mui-icon mui-icon-person"></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</nav>
+	<div class="mui-content">
+            <div class="mui-slider">
+                    <div class="mui-slider-group mui-slider-loop">
+                      <!--支持循环，需要重复图片节点-->
+                      <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner4.png" /></a></div>
+                      <div class="mui-slider-item"><a href="#"><img src="./images/banner1.png" /></a></div>
+                      <div class="mui-slider-item"><a href="#"><img src="./images/banner2.png" /></a></div>
+                      <div class="mui-slider-item"><a href="#"><img src="./images/banner3.png" /></a></div>
+                      <div class="mui-slider-item"><a href="#"><img src="./images/banner4.png" /></a></div>
+                      <!--支持循环，需要重复图片节点-->
+                      <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner1.png" /></a></div>
+                    </div>
+                    <div class="mui-slider-indicator">
+                            <div class="mui-indicator mui-active"></div>
+                            <div class="mui-indicator"></div>
+                            <div class="mui-indicator"></div>
+                            <div class="mui-indicator"></div>
+                            
+                     </div>
+                  </div>
+           <div class="nav-links mui-clearfix">
+                <a href=""><img src="./images/mi1.png" alt=""></a>
+                <a href=""><img src="./images/mi1.png" alt=""></a>
+                <a href=""><img src="./images/mi1.png" alt=""></a>
+                <a href=""><img src="./images/mi1.png" alt=""></a>
+                <a href=""><img src="./images/mi1.png" alt=""></a>
+           </div>   
+           <div class="aa">
+                <a href="#" class="a1"><img src="./images/1.webp" alt=""></a>
+                <a href="#" class="a2"><img src="./images/2.webp" alt=""></a>
+                <a href="#" class="a3"><img src="./images/3.webp" alt=""></a>
+        </div>   
+    </div>
+  
+    <script>
+    //获得slider插件对象
+var gallery = mui('.mui-slider');
+gallery.slider({
+  interval:1000//自动轮播周期，若为0则不自动播放，默认为0；
+});
+    </script>
+</body>
+</html>

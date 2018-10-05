@@ -1,0 +1,21 @@
+.getCode{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #006699;
+}
+.login-now{
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #006699;
+  font-size: 14px;
+}
+.mui-content .mui-button-row .que{
+     width: 95%;
+}
+a.disabled {
+  background-color: #ccc !important;
+  /* color: red !important; */
+}
